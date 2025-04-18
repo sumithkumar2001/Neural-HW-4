@@ -1,0 +1,57 @@
+
+### 1Q:
+
+*1. What is the difference between stemming and lemmatization? Use “running” as an example.*  
+Stemming cuts off word endings to find the root form, often ignoring grammar. Lemmatization uses vocabulary and grammar rules to find the correct base form.  
+Example: “running” →  
+- Stemming: “run”  
+- Lemmatization: “run”  
+However, for “better”:  
+- Stemming: “bet”  
+- Lemmatization: “good”
+
+*2. Why remove stop words in NLP? When might it be harmful?*  
+Removing stop words helps in tasks like topic modeling or document classification by reducing noise from frequent, unimportant words.  
+But it can harm tasks like sentiment analysis or question answering, where words like “not” or “never” change meaning.  
+Example: “I do not like it” → Removing “not” flips the sentiment.
+
+---
+
+### 2Q:
+
+*1. How does NER differ from POS tagging?*  
+NER (Named Entity Recognition) finds and classifies entities like people, places, and dates. POS tagging labels each word by its grammatical role (noun, verb, etc.).  
+Example:  
+Sentence: “Barack Obama was born in Hawaii.”  
+- NER: “Barack Obama” → PERSON, “Hawaii” → LOCATION  
+- POS: “Obama” → NNP, “was” → VBD
+
+*2. Two real-world applications of NER:*  
+- *Financial Analysis*: Identifies companies, dates, and amounts in financial news for trading insights.  
+- *Search Engines*: Helps understand queries by tagging people, places, and brands for more accurate results.
+
+---
+
+### 3Q:
+
+*1. Why divide attention scores by √d in scaled dot-product attention?*  
+To prevent large dot products when vector dimensions (d) are high, which can lead to vanishing gradients during softmax. Dividing by √d keeps values stable, aiding training.
+
+*2. How does self-attention help understand relationships in a sentence?*  
+It allows each word to compare itself with all others, capturing context and long-range dependencies.  
+Example: In “She poured water on the bank,” self-attention helps determine whether “bank” refers to a river or a financial institution.
+
+---
+
+### 4Q:
+
+*1. What is the main architectural difference between BERT and GPT?*  
+- *BERT* uses the *encoder* and reads in both directions (bidirectional).  
+- *GPT* uses the *decoder* and reads left to right (unidirectional).  
+BERT is great for understanding; GPT is designed for generating.
+
+*2. Why are pre-trained models like BERT and GPT useful?*  
+- *Efficient*: No need for massive training from scratch.  
+- *Effective*: Already learned language patterns.  
+- *Flexible*: Easily fine-tuned for specific tasks with less data.  
+This speeds up development and improves accuracy in NLP applications.
