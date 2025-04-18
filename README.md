@@ -1,16 +1,4 @@
 # Neural-HW-4
-Sure! Here's a full **`README.md`** that covers all **4 codes** in a clean and professional format, suitable for placing at the root of a project or repository.
-
----
-
-```markdown
-# 🧠 Natural Language Processing Basics
-
-This repository contains 4 beginner-friendly Python scripts that demonstrate core concepts in Natural Language Processing (NLP). These examples use popular libraries like NLTK, spaCy, and NumPy to show how text can be processed and analyzed—from simple preprocessing to named entity recognition and attention mechanisms.
-
----
-
-## 📄 Overview of Files
 
 ### ✅ Code 1: Text Preprocessing with NLTK
 
